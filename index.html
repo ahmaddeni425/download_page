@@ -17,7 +17,7 @@
         <div id="content">
             <h1 class="text-center">logo2</h1>
             <p class="text-center">E-Receipt</p>
-            <p class="text-center">Deposit/Withdraw</p>
+            <p class="text-center">Withdraw</p>
             <div class="card m-2">
                 <table class="table">
                     <tbody>
@@ -27,15 +27,52 @@
                         </tr>
                         <tr>
                             <td>Recepient Detail</td>
-                            <td>withdraw request</td>
+                            <td>withdraw request get semua data {bank_name,bank_code,bank_route_code,bank_account,bank_account_name,account type}</td> 
+                            <!-- | bank name | HDFC| -->
                         </tr>
                         <tr>
                             <td>sender Detail</td>
-                            <td>transaction</td>
+                            <td>transaction->bank_account->bank->provider->name</td>
+                        </tr>
+                        <tr>
+                            <td>amount</td>
+                            <td>transaction->amount</td>
                         </tr>
                         <tr>
                             <td>status</td>
-                            <td>sent for withdraw, receive for deposit</td>
+                            <td>transaction->transaction_status->status_name</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+        <div id="content">
+            <h1 class="text-center">logo2</h1>
+            <p class="text-center">E-Receipt</p>
+            <p class="text-center">Deposit</p>
+            <div class="card m-2">
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <td>Date</td>
+                            <td>YYYY-MM-DD</td>
+                        </tr>
+                        <tr>
+                            <td>Recepient Detail</td>
+                            <td>transaction->bank_account->bank->provider->name</td>
+                        </tr>
+                        <tr>
+                            <td>sender Detail</td>
+                            <td>transaction->transaction_ref2</td>
+                        </tr>
+                        <tr>
+                            <td>amount</td>
+                            <td>transaction->amount</td>
+                        </tr>
+                        <tr>
+                            <td>status</td>
+                            <td>transaction->transaction_status->status_name</td>
                         </tr>
                     </tbody>
                 </table>
